@@ -8,11 +8,3 @@ var userSchema = new Schema({
     favorites: [String],
     marks: [numbers]
 })
-
-var addressSchema = new Schema({
-    village: String,
-    city: String,
-    state: String,
-    pin: Number,
-    user: userSchema.Types.ObjectId
-})

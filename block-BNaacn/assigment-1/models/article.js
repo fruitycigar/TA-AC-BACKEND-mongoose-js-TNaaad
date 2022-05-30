@@ -6,7 +6,7 @@ var articleSchema = new Schema({
     title: String,
     description: String,
     tags: [ String ],
-    createdAt: { Date, default: Date.now() },
+    createdAt: { type: Date, default: new Date() },
     likes: { Number, default: 0 }
 })
 
